@@ -1,0 +1,19 @@
+#choice{
+	margin-top: 250px;
+	border-radius: 50px;
+	background-image: url("https://www.michiganradio.org/sites/michigan/files/201703/32621859132_25f783b550_o.jpg");
+
+}
+	
+#heads{
+	text-align: center;
+	color: green;
+	margin-top: 50px;
+}
+#abc{
+	font-size: 50px;
+
+}
+#form{
+	background-color: black;
+}

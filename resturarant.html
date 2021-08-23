@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants Signup</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+
+
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAzr7mWAnPBIpGxBpEleguwKJv0n1xLw20",
+            authDomain: "login-signup-1a584.firebaseapp.com",
+            projectId: "login-signup-1a584",
+            storageBucket: "login-signup-1a584.appspot.com",
+            messagingSenderId: "830406685908",
+            appId: "1:830406685908:web:b879a027a8bf20869df741"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+
+    <form onSubmit="return false">
+        <div class="login-wrap">
+            <div class="login-html">
+                <input id="tab-2" type="radio" name="tab" class="sign-up" checked><label for="tab-2" class="tab">resturant
+            </label>
+                <input id="tab-1" type="text" name="tab" class="sign-in"><label for="tab-1" class="tab">Sign In</label>
+                <!-- <div class="sign-up-htm"> -->
+                <div class="login-form">
+                    <div class="group">
+                        <label for="resturarant Name" class="label">Restaurant Name</label>
+                        <input id="resturarant Name" type="text" class="input" data-type="form-text" required />
+                    </div>
+
+                    <div class="group">
+                        <label for="email" class="label">Email</label>
+                        <input id="email" type="email" class="input" required />
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+
+                    </div>
+                    <div class="group">
+                        <label for="password" class="label">Password</label>
+                        <input id="password" type="password" class="input" data-type="password" required />
+                    </div>
+
+                    <div class="group">
+                        <label for="country" class="label">Country</label>
+                        <input id="country" type="text" class="input" data-type="number" required />
+                    </div>
+
+                    <div class="group">
+                        <button type="submit" id="signUp" class="button" onClick="restrauntsSignup()">Restaurant Register</button>
+
+
+                    </div>
+                    <div class="hr">
+                        <br>
+                        <div class="alert alert-primary" role="alert" id="message"></div>
+
+                    </div>
+                    <div class="foot-lnk">
+                        
+                        <a class="change" href="login.html">Already Member?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </form>
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

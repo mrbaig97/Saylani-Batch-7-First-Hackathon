@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css">
+  <title>Main page</title>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+
+
+  <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+          apiKey: "AIzaSyAzr7mWAnPBIpGxBpEleguwKJv0n1xLw20",
+          authDomain: "login-signup-1a584.firebaseapp.com",
+          projectId: "login-signup-1a584",
+          storageBucket: "login-signup-1a584.appspot.com",
+          messagingSenderId: "830406685908",
+          appId: "1:830406685908:web:b879a027a8bf20869df741"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+  </script>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <link rel="stylesheet" href="main.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</head>
+<script>
+//   function stickyMenu(){
+//     var sticky = document.getElementById('sticky');
+//     if(window.pageYOffset>220){
+//       sticky.classList.add('sticky')
+//     }
+//     else{
+//       sticky.classList.remove('sticky');
+//     }
+//   }
+// window.onscroll = function(){
+//    stickyMenu();
+
+// }
+// </script>
+<body>
+<div class="head">
+  <div class="page-title">Order Now</div>
+</div>
+
+<div class="container">
+  <a href="dishes/dish2.html">
+    <div class="categories">
+      <img src="https://c.ndtvimg.com/2018-09/i9993f38_noodles_625x300_26_September_18.jpg" alt="" class="item-image">
+      <div class="image-title">Chinise Restaurant</div>
+    </div>
+  </a>
+  <a href="dishes/dish2.html">
+    <div class="categories">
+      <img src="https://cdn4.vectorstock.com/i/1000x1000/02/23/italian-food-vector-4200223.jpg" alt=""class="item-image">
+      <div class="image-title">Italian Restaurant</div>
+    </div>
+  </a>
+  <a href="dishes/dish1.html">
+    <div class="categories">
+      <img src="http://static.asiawebdirect.com/m/.imaging/678x452/website/bangkok/portals/bangkok-com/homepage/food-top10/allParagraphs/01/top10Set/0/image.jpg" alt=""class="item-image">
+      <div class="image-title">Thai Restaurant</div>
+    </div>
+  </a>
+  <a href="dishes/dish2.html">
+    <div class="categories">
+      <img src="https://foodnerd.s3.eu-west-1.amazonaws.com/production/blog/cover_image/19/Foodnerd-best-pakistani-food-dishes.jpg" alt=""class="item-image">
+      <div class="image-title">Pakistani Restaurants</div>
+    </div>
+  </a>
+
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div id="name">   </div>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Pakwheels.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" 
+              aria-expanded="false"> 
+              
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Setting</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="login.html" id="logout">Log out</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</body>
+
+</html>
